@@ -9,5 +9,6 @@
         $stmt->close();
         $con->close();
     }
-    echo '<p>Added Grade!</p>';
+    session_destroy();
+    header("Location: ../index.php");
 ?>
