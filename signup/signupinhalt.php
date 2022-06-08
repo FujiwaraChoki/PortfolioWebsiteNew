@@ -5,8 +5,7 @@
     $username = $_POST['usernameR'];
     $password = $_POST['passwordR'];
 
-    $con = new mysqli('sql112.epizy.com', 'epiz_31903093', 'sami6344', 'epiz_31903093_signup');
-    if($con->connect_error) {
+    $con = new mysqli('sql304.epizy.com', 	'epiz_31910323', 'sami6344', 'epiz_31903093_User');    if($con->connect_error) {
         die('Failed to connect: '.$con->connect_error);
     } else {
         $stmt = $con->prepare("insert into User(Email, Username, Password) values(?, ?, ?)");

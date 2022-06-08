@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +16,10 @@
     <h1>Links</h1>
     <h2><a href="https://github.com/FujiwaraChoki" target="_blank">GitHub</a></h2>
     <h2><a href="https://www.youtube.com/channel/UC1ghEiTed2YQhLY1YNouzfQ" target="_blank">YouTube</a></h2>
-    <h2><a href="../notenberechner/index.php" target="_top">Notenberechner (Kostenpflichtig)</a></h2>
+    <?php
+        if($_SESSION['hasPaid'] = 1) {
+            echo '<h2><a href="../notenberechner/index.php" target="_top">Notenberechner (Kostenpflichtig)</a></h2>';
+        }
+    ?>
 </body>
 </html>

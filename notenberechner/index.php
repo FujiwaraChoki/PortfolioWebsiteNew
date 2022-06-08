@@ -21,7 +21,7 @@
 
         <!--Menueinhalt-->
         <div id="menue">
-            <object data="../menue/menueinhalt.html" target="_top"></object>
+            <object data="../menue/menueinhalt.php" target="_top"></object>
         </div>
 
         <!--Inhalt-->

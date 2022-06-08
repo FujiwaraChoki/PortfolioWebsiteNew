@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,12 +20,12 @@
 
         <!--Menueinhalt-->
         <div id="menue">
-            <object data="menue/menueinhalt.html" target="_top"></object>
+            <object data="menue/menueinhalt.php" target="_top"></object>
         </div>
 
         <!--Inhalt-->
         <div id="inhalt">
-            <object data="inhalt.html" target="_top"></object>
+            <object data="inhalt.php" target="_top"></object>
         </div>
 
         <!--Fussinhalt-->
