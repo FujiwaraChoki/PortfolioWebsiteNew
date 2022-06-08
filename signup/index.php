@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body id="signupbodyactual">
     <div id="divbg">
         <div id="signupbody">
         <h1 id="titleOfPage" class="text">SignUp Form</h1>

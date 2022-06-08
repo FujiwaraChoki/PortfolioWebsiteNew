@@ -3,7 +3,7 @@
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $con = new mysqli('sql304.epizy.com', 	'epiz_31910323', 'sami6344', 'epiz_31903093_User');
+    $con = new mysqli('sql304.epizy.com', 	'epiz_31910323', 'K3FXEzNspxk9i', 'epiz_31903093_User');
     if($con->connect_error) {
         die('Failed to connect: ' . $con->connect_error);
     } else {
