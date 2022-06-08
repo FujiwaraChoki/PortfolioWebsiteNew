@@ -16,11 +16,15 @@
     <h1>Links</h1>
     <h2><a href="https://github.com/FujiwaraChoki" target="_blank">GitHub</a></h2>
     <h2><a href="https://www.youtube.com/channel/UC1ghEiTed2YQhLY1YNouzfQ" target="_blank">YouTube</a></h2>
-    <h1><a href="../signup/index.php" target="_top">SignUp</a></h1>
-    <h1><a href="../signin/index.php" target="_top">SignIn</a></h1>
     <?php
-        if(isset($_SESSION['hasPaid']) && $_SESSION['hasPaid'] = 1) {
-            echo '<h2><a href="../notenberechner/index.php" target="_top">Notenberechner (Kostenpflichtig)</a></h2>';
+        if($_SESSION['loggedIn'] = 0) {
+            echo '<h1><a href="../signup/index.php" target="_top">Sign Up</a></h1>';
+            echo '<h1><a href="../signin/index.php" target="_top">Sign In</a></h1>';
+        } else if($_SESSION['loggedIn'] = 1) {
+            echo '<h1><a href="../signout/index.php" target="_top">Sign Out</a></h1>';
+            if($_SESSION['hasPaid'] = 1) {
+                echo '<h2><a href="../notenberechner/index.php" target="_top">Notenberechner (Kostenpflichtig)</a></h2>';
+            }
         }
     ?>
 </body>
