@@ -60,7 +60,7 @@ body {
 }
 
 #indexbody {
-    background: lightblue url("grafiken/background-gif.gif") no-repeat fixed center;
+    background: url("grafiken/background-gif.gif") no-repeat fixed center;
     background-size: 100%;
 }
 
