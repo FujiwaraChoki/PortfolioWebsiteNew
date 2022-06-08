@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="ftpupload.net" id="7dbf23ad-3f51-4e83-90eb-ef86a2fe5a8f" port="21" nameFormat="DESCRIPTIVE" username="epiz_31910323" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>
