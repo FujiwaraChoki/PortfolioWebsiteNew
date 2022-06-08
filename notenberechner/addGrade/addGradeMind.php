@@ -9,10 +9,8 @@
     } else {
         $stmt = $con->prepare("insert into Grade(userid, grade) values(?, ?)");
         $stmt->bind_param("id", $userid, $grade);
-        if(!($userid = NULL)) {
-            $stmt->execute();
-            $stmt->close();
-            $con->close();
-        }
+        $stmt->execute();
+        $stmt->close();
+        $con->close();
     }
 ?>
