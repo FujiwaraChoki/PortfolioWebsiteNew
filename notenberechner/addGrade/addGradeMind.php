@@ -7,7 +7,7 @@
     if($con->connect_error) {
         die('Failed to connect : ' . $con->connect_error);
     } else {
-        $stmt = $con->prepare("insert into Grade(UserID, Grade) values(?, ?)");
+        $stmt = $con->prepare("insert into Grade(userid, grade) values(?, ?)");
         $stmt->bind_param("id", $userid, $grade);
         if(!($userid = NULL)) {
             $stmt->execute();
